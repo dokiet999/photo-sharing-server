@@ -1,12 +1,18 @@
 const express = require("express");
-const Photo = require("../db/photoModel");
+const Photos = require("../db/photoModel");
 const router = express.Router();
 
-router.post("/", async (request, response) => {
-  
-});
+// router.get("/photos", async (request, response) => {
+//  try {
+//     const photo = await Photos.find();
+//     response.json(photo);
+//   }catch (err){
+//     console.log(err);
+//     response.status(500).send({ message: "Error fetching users" });
+//   }
+// });
 
-router.get("/", async (request, response) => {
+router.get("/photoOfUser/:id", async (request, response) => {
   
 });
 
